@@ -1,10 +1,14 @@
 import React from 'react'
 import './App.css'
-
+import Body from './Body/body'
+import Header from './Header/header'
+import Footer from './Footer/footer'
 function App() {
   return (
     <div>
-      <p>Clean React App</p>
+      <Header/>
+      <Body/>
+      <Footer/>
     </div>
   )
 }
