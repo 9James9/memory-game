@@ -11,11 +11,14 @@ const Body = () => {
         let clicked = 'false'
         squares.push({i,name,clicked})
     }
-    useEffect(() => {
-        setSquare(shuffle(squares))
-    },[])
+    // useEffect(() => {
+    //     setSquare(shuffle(squares))
+    // },[])
     const handleClick = (e) => {
-        let click = e.target.parentNode.firstChild.textContent
+        // let click = e.target.parentNode.firstChild.textContent
+        let click = e.target.textContent
+        console.log(e.target)
+        console.log(click)
         checkLoss(click)
         // clicked.push(click)
         // console.log(clicked)
