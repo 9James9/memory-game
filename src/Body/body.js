@@ -13,20 +13,22 @@ const Body = () => {
         }
     }
     initialize()
-    const addSquares = e => {
-        setSquare(square.concat('test'))
-        console.log(square)
-    }
+
     useEffect(() => {
-
-        for (let i = 0; i < 9; i++) {
-            setSquare(square.concat('test'))
+        let cards = loadSquares()
+            setSquare(square.concat(shuffle(cards)))
+        return () => {
+            cards = []
+            setSquare(cards)
         }
-
-    },[])
-    // useEffect(() => {
-    //     setSquare(shuffle(squares))
-    // },[])
+    },[clicked])
+    const loadSquares = e => {
+        let cards = []
+        for (let i = 0; i < 9; i++) {
+            cards.push(i)
+        }
+        return cards
+    }
     const handleClick = (e) => {
         // let click = e.target.parentNode.firstChild.textContent
         let click = e.target.textContent
