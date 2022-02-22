@@ -57,13 +57,13 @@ const Body = () => {
     <div>
         <div>
             Try not to click on the same number twice!
+            <p>Score: {score}</p>
+            <p>You have clicked: {clicked}</p>
         </div>
         <div className='body__grid-container'>
             {square.map((card) => {
                 return <Card num = {card[0]}key={card[0]} handleClick={handleClick} square={card[0]}/>
             })}
-            <p>Score: {score}</p>
-            <p>You have clicked: {clicked}</p>
         </div>
         <div>
         </div>

@@ -10,18 +10,18 @@
     justify-content: space-between; */
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    border: 5px solid red;
+    padding: 1rem;
 }
 @media (max-width: 1000px) {
     .body__grid-container {
-        grid-template-columns: repeat(3,1fr)
+        grid-template-columns: repeat(3,1fr);
+
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
     .body__grid-container {
         grid-template-columns: repeat(2,1fr);
     }
-}
-.body__grid-square {
-    /* border: 1px solid blue;
-    padding: 100px; */
 }
