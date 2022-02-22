@@ -16,7 +16,7 @@ const Body = () => {
 
     useEffect(() => {
         let cards = loadSquares()
-            setSquare(square.concat(shuffle(cards)))
+            setSquare(shuffle(cards))
         return () => {
             cards = []
             setSquare(cards)
