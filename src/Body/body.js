@@ -5,14 +5,6 @@ const Body = () => {
     const [square, setSquare] = useState([])
     const [score, setScore] = useState(0)
     const [clicked, setClicked] = useState([])
-    //figure out how to initialize the squares array as state instead of a global array that won't update dynamically
-    let squares = []
-    const initialize = () => {
-        for (let i = 0; i < 9; i++) {
-            squares.push({i})
-        }
-    }
-    initialize()
 
     useEffect(() => {
         let cards = loadSquares()
@@ -31,15 +23,10 @@ const Body = () => {
         return cards
     }
     const handleClick = (e) => {
-        // let click = e.target.parentNode.firstChild.textContent
         let click = e.target.textContent
         console.log(e.target)
         console.log(click)
         checkLoss(click)
-        // clicked.push(click)
-        // console.log(clicked)
-        // console.log(click)
-
         checkLoss(click) ? console.log('loss') : setClicked((prevState) => [...prevState, click])
     }
     const checkLoss = e => {
@@ -72,9 +59,6 @@ const Body = () => {
             Try not to click on the same number twice!
         </div>
         <div className='body__grid-container'>
-            {/* {squares.map((square) => {
-                return <Card key={square.i} handleClick={handleClick} square={square}/>
-            })} */}
             {square.map((card) => {
                 return <Card num = {card[0]}key={card[0]} handleClick={handleClick} square={card[0]}/>
             })}
