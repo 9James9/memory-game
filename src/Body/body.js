@@ -80,6 +80,9 @@ const Body = () => {
         </div>
         <div>
             {square}
+            {square.map((card) => {
+                return <Card num = {card[0]}key={card[0]} handleClick={handleClick} square={card[0]}/>
+            })}
             {console.log(square)}
         </div>
     </div>
