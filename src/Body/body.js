@@ -16,7 +16,7 @@ const Body = () => {
     },[clicked])
     const loadSquares = e => {
         let cards = []
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < 12; i++) {
             let card = [i,'name']
             cards.push(card)
         }
