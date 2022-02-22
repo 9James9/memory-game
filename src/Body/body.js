@@ -72,18 +72,16 @@ const Body = () => {
             Try not to click on the same number twice!
         </div>
         <div className='body__grid-container'>
-            {squares.map((square) => {
+            {/* {squares.map((square) => {
                 return <Card key={square.i} handleClick={handleClick} square={square}/>
+            })} */}
+            {square.map((card) => {
+                return <Card num = {card[0]}key={card[0]} handleClick={handleClick} square={card[0]}/>
             })}
             <p>Score: {score}</p>
             <p>You have clicked: {clicked}</p>
         </div>
         <div>
-            {square}
-            {square.map((card) => {
-                return <Card num = {card[0]}key={card[0]} handleClick={handleClick} square={card[0]}/>
-            })}
-            {console.log(square)}
         </div>
     </div>
   )
