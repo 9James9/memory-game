@@ -5,11 +5,25 @@ const Body = () => {
     const [square, setSquare] = useState([])
     const [score, setScore] = useState(0)
     const [clicked, setClicked] = useState([])
+    //figure out how to initialize the squares array as state instead of a global array that won't update dynamically
     let squares = []
-    for (let i = 0; i < 9; i++) {
-
-        squares.push({i})
+    const initialize = () => {
+        for (let i = 0; i < 9; i++) {
+            squares.push({i})
+        }
     }
+    initialize()
+    const addSquares = e => {
+        setSquare(square.concat('test'))
+        console.log(square)
+    }
+    useEffect(() => {
+
+        for (let i = 0; i < 9; i++) {
+            setSquare(square.concat('test'))
+        }
+
+    },[])
     // useEffect(() => {
     //     setSquare(shuffle(squares))
     // },[])
@@ -61,6 +75,7 @@ const Body = () => {
             <p>Score: {score}</p>
             <p>You have clicked: {clicked}</p>
         </div>
+        <div>{square}</div>
     </div>
   )
 }
