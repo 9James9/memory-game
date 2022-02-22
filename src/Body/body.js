@@ -25,7 +25,8 @@ const Body = () => {
     const loadSquares = e => {
         let cards = []
         for (let i = 0; i < 9; i++) {
-            cards.push(i)
+            let card = [i,'name']
+            cards.push(card)
         }
         return cards
     }
@@ -77,7 +78,10 @@ const Body = () => {
             <p>Score: {score}</p>
             <p>You have clicked: {clicked}</p>
         </div>
-        <div>{square}</div>
+        <div>
+            {square}
+            {console.log(square)}
+        </div>
     </div>
   )
 }
