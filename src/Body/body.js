@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './body.css'
 import Card from '../Components/Card/card'
 const Body = () => {
@@ -11,7 +11,9 @@ const Body = () => {
         let clicked = 'false'
         squares.push({i,name,clicked})
     }
-
+    useEffect(() => {
+        setSquare(shuffle(squares))
+    },[])
     const handleClick = (e) => {
         let click = e.target.parentNode.firstChild.textContent
         checkLoss(click)
@@ -42,10 +44,13 @@ const Body = () => {
     const resetClicked = () => {
         setClicked([])
     }
+    const shuffle = e => {
+        return [...e].sort(() => Math.random() - 0.5)
+    }
   return (
     <div>
         <div>
-            Try not to click on the same pokemon twice!
+            Try not to click on the same number twice!
         </div>
         <div className='body__grid-container'>
             {squares.map((square) => {
