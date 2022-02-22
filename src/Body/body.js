@@ -2,14 +2,13 @@ import React, {useState, useEffect} from 'react'
 import './body.css'
 import Card from '../Components/Card/card'
 const Body = () => {
-    const [square, setSquare] = useState({})
+    const [square, setSquare] = useState([])
     const [score, setScore] = useState(0)
     const [clicked, setClicked] = useState([])
     let squares = []
     for (let i = 0; i < 9; i++) {
-        let name = 'hello world'
-        let clicked = 'false'
-        squares.push({i,name,clicked})
+
+        squares.push({i})
     }
     // useEffect(() => {
     //     setSquare(shuffle(squares))
