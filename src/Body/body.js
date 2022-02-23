@@ -56,9 +56,6 @@ const Body = () => {
     const shuffle = e => {
         return [...e].sort(() => Math.random() - 0.5)
     }
-    const updateHighScore = () => {
-
-    }
   return (
     <div>
         <div>
