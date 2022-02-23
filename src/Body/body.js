@@ -16,7 +16,7 @@ const Body = () => {
     },[clicked])
     useEffect(() => {
         return score > highScore ? setHighScore(score) : false
-    })
+    },[score])
     const loadSquares = e => {
         let cards = []
         for (let i = 0; i < 12; i++) {
