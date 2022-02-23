@@ -5,7 +5,7 @@ const Body = () => {
     const [square, setSquare] = useState([])
     const [score, setScore] = useState(0)
     const [clicked, setClicked] = useState([])
-
+    const [highScore, setHighScore] = useState(0)
     useEffect(() => {
         let cards = loadSquares()
             setSquare(shuffle(cards))
@@ -14,6 +14,9 @@ const Body = () => {
             setSquare(cards)
         }
     },[clicked])
+    useEffect(() => {
+        return score > highScore ? setHighScore(score) : false
+    })
     const loadSquares = e => {
         let cards = []
         for (let i = 0; i < 12; i++) {
@@ -53,11 +56,15 @@ const Body = () => {
     const shuffle = e => {
         return [...e].sort(() => Math.random() - 0.5)
     }
+    const updateHighScore = () => {
+
+    }
   return (
     <div>
         <div>
             Try not to click on the same number twice!
             <p>Score: {score}</p>
+            <p>High Score: {highScore}</p>
             <p>You have clicked: {clicked}</p>
         </div>
         <div className='body__grid-container'>
