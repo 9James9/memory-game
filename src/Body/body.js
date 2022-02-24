@@ -99,10 +99,10 @@ const Body = () => {
   return (
     <div>
       <div className="body__instructions-container">
-        <p>Try not to click on the same pokemon twice!</p>
-        <div>
-          <p>Score: {score}</p>
-          <p>High Score: {highScore}</p>
+        <p className="body__instructions-text">Try not to click on the same pokemon twice!</p>
+        <div className="body__score-container">
+          <p className="body__score-text">Score: {score}</p>
+          <p className="body__highscore-text">High Score: {highScore}</p>
         </div>
       </div>
       <div className="body__grid-container">
