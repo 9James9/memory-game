@@ -66,9 +66,8 @@ const Body = () => {
     return cards;
   };
   const handleClick = (e) => {
-    let click = e.target.textContent;
-    console.log(e.target);
-    console.log(click);
+    let click = e.target.parentNode.firstChild.textContent;
+    console.log(e.target.parentNode.firstChild.textContent);
     checkLoss(click);
     checkLoss(click)
       ? console.log("loss")
