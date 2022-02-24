@@ -9,23 +9,25 @@
     align-items: center;
     justify-content: space-between; */
     display: grid;
-    grid-template-columns: repeat(4,300px);
+    grid-template-columns: repeat(4,200px);
+    justify-content: center;
+    
     gap: 3rem;
     border: 5px solid red;
     padding: 1rem;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
     .body__grid-container {
-        grid-template-columns: repeat(3,300px);
+        grid-template-columns: repeat(3,200px);
 
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .body__grid-container {
-        grid-template-columns: repeat(2,300px);
+        grid-template-columns: repeat(2,200px);
     }
 }
-@media (max-width: 750px) {
+@media (max-width: 500px) {
     .body__grid-container {
 
         align-items: center;
