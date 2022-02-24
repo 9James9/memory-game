@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './body.css'
 import Card from '../Components/Card/card'
+import pikachu from '../Images/pikachu.jpg'
 const Body = () => {
     const [square, setSquare] = useState([])
     const [score, setScore] = useState(0)
@@ -35,10 +36,13 @@ const Body = () => {
                 11: 'Deoxys',
                 12: 'Squirtle'
             }
-            
-            let card = [i,names[i]]
+            let images = {
+                0: pikachu,
+                1: '../Images/eevee.jpg',
+                2: './'
+            }
+            let card = [i,names[i],images[0]]
             cards.push(card)
-            console.log(card)
         }
         return cards
     }
@@ -83,7 +87,7 @@ const Body = () => {
         </div>
         <div className='body__grid-container'>
             {square.map((card) => {
-                return <Card name = {card[1]}num = {card[0]}key={card[0]} handleClick={handleClick} square={card[0]}/>
+                return <Card image = {card[2]}name = {card[1]}num = {card[0]}key={card[0]} handleClick={handleClick} square={card[0]}/>
             })}
         </div>
         <div>

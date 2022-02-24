@@ -3,6 +3,22 @@
 }
 .card__container {
     border: 2px solid black;
-    padding: 100px;
+    padding: 50px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__image {
+    height: 200px;
+    width: 200px;
+    z-index: 0;
+}
+
+.card__name {
+    position: absolute;
+    z-index: 4;
+    background-color: white;
+    
 }
