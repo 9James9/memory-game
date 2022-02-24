@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.3c5d073d.css",
+    "main.js": "/memory-game/static/js/main.e3fb5943.js",
+    "static/media/eevee.png": "/memory-game/static/media/eevee.d1cad4b51e9fed27cd1b.png",
+    "static/media/bulbasaur.jpg": "/memory-game/static/media/bulbasaur.961a737abc93a29558b0.jpg",
+    "static/media/snorlax.jpg": "/memory-game/static/media/snorlax.09e93865556d2f01952b.jpg",
+    "static/media/charmander.jpg": "/memory-game/static/media/charmander.4fd5701aa09647505bc4.jpg",
+    "static/media/ditto.jpg": "/memory-game/static/media/ditto.cbbf71a166d18930ec0d.jpg",
+    "static/media/piplup.png": "/memory-game/static/media/piplup.4887419f65ebf26e9909.png",
+    "static/media/mewtwo.jpg": "/memory-game/static/media/mewtwo.072f8c2f41d480c7a819.jpg",
+    "static/media/gardevoir.png": "/memory-game/static/media/gardevoir.edaa7dd5ad792b305f9f.png",
+    "static/media/charizard.jpg": "/memory-game/static/media/charizard.38167b2074a0847c4563.jpg",
+    "static/media/pikachu2.png": "/memory-game/static/media/pikachu2.50742e50c18b46c85580.png",
+    "static/media/deoxys.jpg": "/memory-game/static/media/deoxys.cb42e5cc3992aca18900.jpg",
+    "static/media/pokeball.png": "/memory-game/static/media/pokeball.94ac108c011f284bb351.png",
+    "static/media/mew.jpg": "/memory-game/static/media/mew.e4e4aa6d4dae6f159e9d.jpg",
+    "index.html": "/memory-game/index.html",
+    "main.3c5d073d.css.map": "/memory-game/static/css/main.3c5d073d.css.map",
+    "main.e3fb5943.js.map": "/memory-game/static/js/main.e3fb5943.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c5d073d.css",
+    "static/js/main.e3fb5943.js"
+  ]
+}
