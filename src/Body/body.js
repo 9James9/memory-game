@@ -20,8 +20,25 @@ const Body = () => {
     const loadSquares = e => {
         let cards = []
         for (let i = 0; i < 12; i++) {
-            let card = [i,'name']
+            let names = {
+                0: 'Pikachu',
+                1: 'Eevee',
+                2: 'Snowlax',
+                3: 'Charizard',
+                4: 'Charmander',
+                5: 'Garchomp',
+                6: 'Ditto',
+                7: 'Gardevoir',
+                8: 'Piplup',
+                9: 'Mewtwo',
+                10: 'Mew',
+                11: 'Deoxys',
+                12: 'Squirtle'
+            }
+            
+            let card = [i,names[i]]
             cards.push(card)
+            console.log(card)
         }
         return cards
     }
@@ -66,7 +83,7 @@ const Body = () => {
         </div>
         <div className='body__grid-container'>
             {square.map((card) => {
-                return <Card num = {card[0]}key={card[0]} handleClick={handleClick} square={card[0]}/>
+                return <Card name = {card[1]}num = {card[0]}key={card[0]} handleClick={handleClick} square={card[0]}/>
             })}
         </div>
         <div>
