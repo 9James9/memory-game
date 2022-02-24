@@ -74,12 +74,10 @@ const Body = () => {
     }
     const checkLoss = e => {
         if (clicked.includes(e)) {
-            console.log('loser lol')
             resetScore()
             resetClicked()
             return true
         } else {
-            console.log('score increases by 1')
             increaseScore()
             return false
         }
@@ -99,10 +97,9 @@ const Body = () => {
   return (
     <div>
         <div>
-            Try not to click on the same number twice!
+            Try not to click on the same pokemon twice!
             <p>Score: {score}</p>
             <p>High Score: {highScore}</p>
-            <p>You have clicked: {clicked}</p>
         </div>
         <div className='body__grid-container'>
             {square.map((card) => {
