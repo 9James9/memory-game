@@ -1,9 +1,10 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
 * {
     box-sizing: border-box;
 }
 .card__container {
     border: 2px solid black;
-    padding: 10px;
+    padding: 0px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -19,8 +20,11 @@
 }
 
 .card__name {
-    position: absolute;
+    position: relative;
     z-index: 4;
-    background-color: white;
-    
+    background-color: #B3a125;
+    width: 196px;
+    text-align: center;
+    font-family: 'Pokemon Solid', sans-serif;
+    padding: 2px;
 }
