@@ -12,9 +12,8 @@
     display: grid;
     grid-template-columns: repeat(4,200px);
     justify-content: center;
-    
+    background-color: #3B4CCA;
     gap: 3rem;
-    border: 5px solid red;
     padding: 1rem;
 }
 @media (max-width: 1000px) {
@@ -39,4 +38,6 @@
 
 .body__instructions-container {
     font-family: 'Arimo', sans-serif;
+    text-align: center;
+    padding: 10px;
 }
