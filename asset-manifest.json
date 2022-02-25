@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.d1553137.css",
+    "main.css": "/memory-game/static/css/main.c027abf9.css",
     "main.js": "/memory-game/static/js/main.15a143b9.js",
     "static/media/eevee.png": "/memory-game/static/media/eevee.d1cad4b51e9fed27cd1b.png",
     "static/media/bulbasaur.jpg": "/memory-game/static/media/bulbasaur.961a737abc93a29558b0.jpg",
@@ -16,11 +16,11 @@
     "static/media/pokeball.png": "/memory-game/static/media/pokeball.94ac108c011f284bb351.png",
     "static/media/mew.jpg": "/memory-game/static/media/mew.e4e4aa6d4dae6f159e9d.jpg",
     "index.html": "/memory-game/index.html",
-    "main.d1553137.css.map": "/memory-game/static/css/main.d1553137.css.map",
+    "main.c027abf9.css.map": "/memory-game/static/css/main.c027abf9.css.map",
     "main.15a143b9.js.map": "/memory-game/static/js/main.15a143b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1553137.css",
+    "static/css/main.c027abf9.css",
     "static/js/main.15a143b9.js"
   ]
 }
